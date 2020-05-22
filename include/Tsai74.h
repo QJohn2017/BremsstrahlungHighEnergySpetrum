@@ -4,7 +4,7 @@
 
 namespace TSAI74 {
 
-class Tsai74 {
+class Tsai74 {  // Tsai, Review of Modern Physics, Vol. 46, No. 4, October 1974
    public:
     explicit Tsai74(int Z);
 
