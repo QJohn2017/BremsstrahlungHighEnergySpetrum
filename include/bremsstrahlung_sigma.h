@@ -2,6 +2,8 @@
 #ifndef INCLUDE_BREMSSTRAHLUNG_SIGMA_H_
 #define INCLUDE_BREMSSTRAHLUNG_SIGMA_H_
 
+namespace GALPROP {
+
 class BremsstrahlungSpectrum {
    public:
     BremsstrahlungSpectrum(int atomic_number, int atomic_electrons);
@@ -31,5 +33,7 @@ class BremsstrahlungSpectrum {
     double dsdk_intermediate_energy();
     double dsdk_high_energy();
 };
+
+}  // namespace GALPROP
 
 #endif  // INCLUDE_BREMSSTRAHLUNG_SIGMA_H_

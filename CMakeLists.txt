@@ -28,6 +28,7 @@ endif(GSL_FOUND)
 set( BREMSSPECTRUM_SRCS
 	src/bremsstrahlung_sigma.cpp
 	src/bremsstrahlung_functions.cpp
+	src/Tsai74.cpp
 	)
 
 # make library

@@ -7,6 +7,8 @@
 #include "include/bremsstrahlung_functions.h"
 #include "include/cgs.h"
 
+namespace GALPROP {
+
 BremsstrahlungSpectrum::BremsstrahlungSpectrum(int atomic_number, int atomic_electrons)
     : Z(atomic_number), N(atomic_electrons) {
     assert(atomic_number == 1 || atomic_number == 2);
@@ -93,3 +95,5 @@ double BremsstrahlungSpectrum::dsdk_high_energy() {
     double value = pow2(cgs::r_e) * cgs::alpha_f / k * factor;
     return value;
 }
+
+}  // namespace GALPROP

@@ -8,6 +8,8 @@
 
 #include "include/cgs.h"
 
+namespace GALPROP {
+
 #define LIMIT 10000
 #define EPSINT 1e-5
 #define KEYINT 3
@@ -104,3 +106,5 @@ double Phi_2(double gamma_i, double gamma_f, double k, double delta, int Z, int 
                    8. * Z * (5. / 6. * (1. - (N - 1.) / static_cast<double>(Z)) + I);
     return value;
 }
+
+}  // namespace GALPROP
