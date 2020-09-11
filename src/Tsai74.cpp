@@ -44,7 +44,7 @@ double Tsai74::get(double primaryKineticEnergy, double gammaEnergy) {
     double xsecs = 0;
 
     if (gammaEnergy / primaryKineticEnergy < 1.) {
-        xsecs = 4. * cgs::alpha_f * pow2(cgs::r_e) / 3.;
+        xsecs = 4. * cgs::alpha_f * pow2(cgs::electron_radius) / 3.;
 
         const auto PrimaryTotalEnergy = primaryKineticEnergy + cgs::electron_mass_c2;
         const auto y = gammaEnergy / PrimaryTotalEnergy;

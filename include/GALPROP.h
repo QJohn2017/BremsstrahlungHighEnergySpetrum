@@ -4,6 +4,12 @@
 
 namespace GALPROP {
 
+double Elwert_factor(double beta_i, double beta_f, int Z);
+double xi_func(double T_electron, double k, int Z, int N);
+double Phi_u(double gamma_i, double gamma_f, double k);
+double Phi_1(double gamma_i, double gamma_f, double k, double delta, int Z, int N);
+double Phi_2(double gamma_i, double gamma_f, double k, double delta, int Z, int N);
+
 class BremsstrahlungSpectrum {
    public:
     BremsstrahlungSpectrum(int atomic_number, int atomic_electrons);

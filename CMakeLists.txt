@@ -26,9 +26,9 @@ endif(GSL_FOUND)
 
 # add source files
 set( BREMSSPECTRUM_SRCS
-	src/bremsstrahlung_sigma.cpp
-	src/bremsstrahlung_functions.cpp
+	src/GALPROP.cpp
 	src/Tsai74.cpp
+	src/lossrate.cpp
 	)
 
 # make library
